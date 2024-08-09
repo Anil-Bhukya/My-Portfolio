@@ -1,0 +1,1226 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio-Bhukya Anil</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+      integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+      integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://kit.fontawesome.com/89a115be91.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+    <style>
+      @media (max-width: 575px) {
+        .w-xs-100 {
+          width: 250px !important;
+          height: 250px !important;
+        }
+      }
+
+      @media (min-width: 992px) and (max-width: 1200px) {
+        .w-lg-100 {
+          width: 90% !important;
+        }
+      }
+
+      @media (min-width: 1200px) {
+        .w-xl-100 {
+          width: 75%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <nav
+      class="navbar navbar-expand-lg navbarcolor fixed-top navbar-light bg-white w-100 d-flex justify-content-around"
+    >
+      <div class="container">
+        <a class="navbar-brand" href="#profile" id="marginleft">
+          Bhukya Anil
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarNavAltMarkup"
+          aria-controls="navbarNavAltMarkup"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav ml-auto" id="marginright">
+            <a class="nav-link font active" href="#profile"
+              >Home <span class="sr-only">(current)</span></a
+            >
+            <a class="nav-link font" href="#About-Me">About Me</a>
+            <a class="nav-link font" href="#Skills">Skills</a>
+            <a class="nav-link font" href="#Projects">Projects</a>
+            <a class="nav-link font" href="#certifications">Certifications</a>
+            <a class="nav-link font" href="#contact">Contact Me</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <section id="profile">
+      <div class="container">
+        <div class="row align-item-center justify-content-center">
+          <div
+            class="col-12 col-lg-6 d-flex d-flex-column align-item-center justify-content-end p-4 pt-lg-5 order-2 order-lg-1 image-profile-centered"
+          >
+            <div class="section__text">
+              <p class="section__text__p1">Hello, I'm</p>
+              <h1 class="title">Bhukya Anil</h1>
+              <p class="section__text__p2 mb-2">
+                Enthusiast Data Analyst & Scientist
+              </p>
+              <div
+                class="btn-container d-flex d-flex-row justify-content-center mb-2 mt-4"
+              >
+                <button
+                  class="btn btn-light button-style mr-3"
+                  onclick="window.open('./images/Bhukya Anil_IITKGP_Resume.pdf')"
+                >
+                  Download CV
+                </button>
+                <button
+                  class="btn btn-dark button-style"
+                  onclick="location.href='./#contact'"
+                >
+                  Contact Info
+                </button>
+              </div>
+              <div
+                id="socials-container"
+                class="d-flex d-flex-row justify-content-center mt-4"
+              >
+                <i
+                  class="fa-brands fa-github icon1"
+                  alt="My LinkedIn profile"
+                  onclick="location.href='https://github.com/Anil-Bhukya'"
+                ></i>
+                <i
+                  class="fa-brands fa-linkedin icon1 icon3 ml-3"
+                  style="color: #0077b5"
+                  alt="My LinkedIn profile"
+                  onclick="location.href='https://www.linkedin.com/in/anil-bhukya-b75908191/'"
+                ></i>
+              </div>
+            </div>
+          </div>
+          <div
+            class="col-12 col-lg-6 d-flex d-flex-column align-item-center justify-content-center order-1 order-lg-2"
+          >
+            <div
+              class="section__pic-container d-flex d-flex-column align-item-center justify-content-end image-profile-centered"
+            >
+              <img
+                src="images/Profile-pic.png"
+                alt="John Doe profile picture"
+                class="profile-pic w-75 w-md-60 w-md-75 w-lg-100 w-xl-75 circular-image"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="About-Me" class="pt-60">
+      <div class="container mt-5">
+        <p class="text-center mb-1">Get To Know More</p>
+        <h1 class="text-center mb-4">About Me</h1>
+        <div class="row d-flex flex-column flex-lg-row align-items-stretch">
+          <div class="col-lg-4 text-center mb-3 mb-lg-0">
+            <img
+              src="images/About-section.png"
+              class="profile-img"
+              alt="Profile Image"
+            />
+          </div>
+          <div
+            class="col-lg-8 d-flex flex-column justify-content-center right-content"
+          >
+            <p class="text-justify mb-1">
+              Hi, I'm Bhukya Anil, a data enthusiast with a background in
+              Metallurgical and Materials Engineering from IIT Kharagpur.
+              Although my education is in metallurgy, my passion lies in data
+              analytics. I've learned skills like Power BI, SQL, and Data
+              Structures and Algorithms, applying them to various projects. I'm
+              focused on expanding my expertise in data analytics and
+              contributing to impactful projects. Outside of work, I enjoy
+              playing cricket, volleyball, and watching movies. I'm always open
+              to connecting with professionals and exploring new opportunities
+            </p>
+            <div class="row">
+              <div class="col-md-6">
+                <div class="info-box">
+                  <i class="fa-solid fa-briefcase icon"></i>
+                  <h5>Internship</h5>
+                  <p class="m-0">2 months</p>
+                  <p class="m-0">Database Developer</p>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="info-box">
+                  <i class="fa-solid fa-graduation-cap icon"></i>
+                  <h5>Education</h5>
+                  <p class="m-0">Dual Degree (BTech+MTech)</p>
+                  <p class="m-0">IIT kharapur (2019 - 2024)</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="Skills" class="pt-60">
+      <div class="container container1 my-4">
+        <!-- Main heading -->
+        <p class="text-center mb-1">Explore My</p>
+        <h1 class="text-center mb-4">Skills and Expertise</h1>
+        <div class="row justify-content-center">
+          <!-- Card for Languages -->
+          <div class="col-md-6 col-lg-4 d-flex justify-content-center">
+            <div class="card-custom">
+              <div class="card-content">
+                <div class="icon">
+                  <i class="fas fa-code"></i>
+                  <!-- General icon for programming languages -->
+                </div>
+                <h4 class="card-title">Languages</h4>
+                <div class="icon-list">
+                  <div class="icon-content">
+                    <img src="images/c++.png" class="icon-img" alt="C++" />
+                    <span>C++</span>
+                  </div>
+                  <div class="icon-content">
+                    <img src="images/html.png" class="icon-img" alt="HTML" />
+                    <!-- Power BI icon image -->
+                    <span>HTML</span>
+                  </div>
+                  <div class="icon-content">
+                    <img
+                      src="images/Javascript.png"
+                      class="icon-img"
+                      alt="Javascript"
+                    />
+                    <!-- Power BI icon image -->
+                    <span>Javascript</span>
+                  </div>
+                  <div class="icon-content">
+                    <img
+                      src="images/python.png"
+                      class="icon-img"
+                      alt="Python"
+                    />
+                    <!-- Power BI icon image -->
+                    <span>Python</span>
+                  </div>
+                  <div class="icon-content">
+                    <img src="images/sql.png" class="icon-img" alt="SQL" />
+                    <!-- Power BI icon image -->
+                    <span>SQL</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Card for Tools -->
+          <div class="col-md-6 col-lg-4 d-flex justify-content-center">
+            <div class="card-custom">
+              <div class="card-content">
+                <div class="icon">
+                  <i class="fas fa-tools"></i>
+                  <!-- General icon for tools -->
+                </div>
+                <h4 class="card-title">Software/Tools</h4>
+                <div class="icon-list">
+                  <div class="icon-content">
+                    <img src="images/git.png" class="icon-img" alt="Git" />
+                    <span>Git</span>
+                  </div>
+                  <div class="icon-content">
+                    <img
+                      src="images/vscode.png"
+                      class="icon-img"
+                      alt="VScode"
+                    />
+                    <span>VSCode</span>
+                  </div>
+                  <div class="icon-content">
+                    <img
+                      src="images/powerBI.png"
+                      class="icon-img"
+                      alt="Power-BI"
+                    />
+                    <span>Power BI</span>
+                  </div>
+                  <div class="icon-content">
+                    <img src="images/MySQL.png" class="icon-img" alt="MySQL" />
+                    <span>MySQL</span>
+                  </div>
+                  <div class="icon-content">
+                    <img
+                      src="images/ms-excel.png"
+                      class="icon-img"
+                      alt="MS-Excel"
+                    />
+                    <span>MS Excel</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Card for Frameworks -->
+          <div class="col-md-6 col-lg-4 d-flex justify-content-center">
+            <div class="card-custom">
+              <div class="card-content">
+                <div class="icon">
+                  <i class="fas fa-cogs"></i>
+                  <!-- General icon for frameworks -->
+                </div>
+                <h4 class="card-title">Libraries/Frameworks</h4>
+                <div class="icon-list">
+                  <div class="icon-content">
+                    <img
+                      src="images/pandas.png"
+                      class="icon-img"
+                      alt="Pandas"
+                    />
+                    <!-- Power BI icon image -->
+                    <span>Pandas</span>
+                  </div>
+                  <div class="icon-content">
+                    <img src="images/numpy.png" class="icon-img" alt="Numpy" />
+                    <!-- Power BI icon image -->
+                    <span>Numpy</span>
+                  </div>
+                  <div class="icon-content">
+                    <img
+                      src="images/bootstrap-stack.png"
+                      class="icon-img"
+                      alt="Bootstrap"
+                    />
+                    <!-- Power BI icon image -->
+                    <span>Bootstrap</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="Projects" class="pt-60">
+      <div class="container my-4">
+        <p class="text-center mb-1">Browse My Recent</p>
+        <h1 class="text-center mb-3">Projects</h1>
+        <div class="row d-flex">
+          <div class="col-md-4 d-flex justify-content-center">
+            <div class="card project-card justify-content-end">
+              <!-- <a
+                href="#"
+                class="block-20 zoom-effect"
+                style="background-image: url('images/Home-page.png')"
+              >
+              </a> -->
+              <img
+                src="images/Home-page.png"
+                alt="coverimage"
+                class="block-20 zoom-effect"
+              />
+              <div class="card-body pt-0">
+                <h2 class="project-title">Business Insights<br />- Power BI</h2>
+                <a
+                  href="https://github.com/Anil-Bhukya/Business-Insights-360"
+                  class="btn btn-info btn-custom"
+                  >GitHub</a
+                >
+                <button
+                  class="btn btn-secondary btn-custom"
+                  data-toggle="modal"
+                  data-target="#projectOneModal"
+                >
+                  Live Demo
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 d-flex justify-content-center">
+            <div class="card project-card justify-content-end">
+              <!-- <a
+                href="#"
+                class="block-20 zoom-effect"
+                style="background-image: url('images/project-1.png')"
+              >
+              </a> -->
+              <img
+                src="images/excel_project_image.jpg"
+                alt="coverimage"
+                class="block-20 zoom-effect"
+              />
+              <div class="card-body pt-0">
+                <h4 class="project-title">Financial Analytics<br />- Excel</h4>
+                <a
+                  href="https://github.com/Anil-Bhukya/Excel-Sales-Financial-Analytics"
+                  class="btn btn-info btn-custom"
+                  >GitHub</a
+                >
+                <button
+                  class="btn btn-secondary btn-custom"
+                  data-toggle="modal"
+                  data-target="#projectTwoModal"
+                >
+                  Live Demo
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 d-flex justify-content-center">
+            <div class="card project-card justify-content-end">
+              <!-- <a
+                href="#"
+                class="block-20 zoom-effect"
+                style="background-image: url('images/Home-page.png')"
+              >
+              </a> -->
+              <img
+                src="images/SQL-project.png"
+                alt="coverimage"
+                class="block-20 zoom-effect"
+              />
+              <div class="card-body pt-0">
+                <h2 class="project-title">Sales Analytics<br />- SQL</h2>
+                <a
+                  href="https://github.com/Anil-Bhukya/SQL-Sales-Analytics"
+                  class="btn btn-info btn-custom"
+                  >GitHub</a
+                >
+                <button
+                  class="btn btn-secondary btn-custom"
+                  data-toggle="modal"
+                  data-target="#projectThreeModal"
+                >
+                  Live Demo
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- <div class="row extra d-none">
+          <div class="col-md-4 d-flex justify-content-center">
+            <div class="card project-card justify-content-end">
+              <img
+                src="images/Home-page.png"
+                alt="coverimage"
+                class="block-20 zoom-effect"
+              />
+              <div class="card-body pt-0">
+                <h2 class="project-title">Project One</h2>
+                <a href="#" class="btn btn-info btn-custom">GitHub</a>
+                <button
+                  class="btn btn-secondary btn-custom"
+                  data-toggle="modal"
+                  data-target="#projectOneModal"
+                >
+                  Live Demo
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 d-flex justify-content-center">
+            <div class="card project-card justify-content-end">
+              <img
+                src="images/Home-page.png"
+                alt="coverimage"
+                class="block-20 zoom-effect"
+              />
+              <div class="card-body pt-0">
+                <h2 class="project-title">Project One</h2>
+                <a href="#" class="btn btn-info btn-custom">GitHub</a>
+                <button
+                  class="btn btn-secondary btn-custom"
+                  data-toggle="modal"
+                  data-target="#projectOneModal"
+                >
+                  Live Demo
+                </button>
+              </div>
+            </div>
+          </div>
+        </div> -->
+        <!-- <button class="btn btn-dark show-more-btn">Show More</button> -->
+      </div>
+
+      <!-- Modals with Carousels -->
+      <!-- Project One Modal -->
+      <div
+        class="modal fade p-0"
+        id="projectOneModal"
+        tabindex="-1"
+        aria-labelledby="projectOneModalLabel"
+        aria-hidden="true"
+      >
+        <div
+          class="modal-dialog modal-dialog1 modal-dialog-centered modal-xl1 modal-lg1 modal-sm1"
+        >
+          <div class="modal-content modal-content1">
+            <div class="modal-header modal-header1">
+              <h5 class="modal-title modal-title1" id="projectOneModalLabel">
+                Business Insights-360
+              </h5>
+              <button
+                type="button"
+                class="close close-btn"
+                data-dismiss="modal"
+                aria-label="Close"
+              >
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body modal-body1">
+              <div class="row">
+                <div class="col-12 col-xl-5">
+                  <div
+                    class="d-flex justify-content-between align-items-center mb-14"
+                  >
+                    <div class="bg-soft-primary px-16 py-8 rounded-2 fs-18">
+                      Power BI Project
+                    </div>
+                    <div>
+                      <img
+                        class="img-fluid thumb-md"
+                        src="images/PowerBI.png"
+                        alt="img"
+                      />
+                    </div>
+                  </div>
+                  <h5 class="fs-32 fw-800 mb-22">Business Insights - 360</h5>
+                  <p
+                    class="text-justify mb-0 text-gray-400 fs-16 fw-500 text-break"
+                  >
+                    AtliQ Hardware is growing rapidly in the recent years, and
+                    they have decided to implement the data analytics using
+                    Power BI in their company for the first time to surpass
+                    their competitors in the market. This 360 dashboard helps
+                    the stakeholders to make data driven decisions.
+                  </p>
+                </div>
+                <div class="col-12 col-xl-7 mt-30 mt-xl-0">
+                  <div
+                    id="carouselProjectOne"
+                    class="carousel slide"
+                    data-ride="carousel"
+                  >
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <img
+                          src="images/Home-page.png"
+                          alt="Project One Image 1"
+                          class="d-block"
+                        />
+                        <p class="project360">Home Page</p>
+                      </div>
+
+                      <div class="carousel-item">
+                        <img
+                          src="images/FinanceView.png"
+                          alt="Project One Image 2"
+                          class="d-block"
+                        />
+                        <p class="project360">Financial View Page</p>
+                      </div>
+
+                      <div class="carousel-item">
+                        <img
+                          src="images/SalesView.png"
+                          alt="Project One Image 3"
+                          class="d-block"
+                        />
+                        <p class="project360">Sales View Page</p>
+                      </div>
+
+                      <div class="carousel-item">
+                        <img
+                          src="images/MarketingView.png"
+                          alt="Project One Image 3"
+                          class="d-block"
+                        />
+                        <p class="project360">Marketing View Page</p>
+                      </div>
+
+                      <div class="carousel-item">
+                        <img
+                          src="images/SupplyChainView.png"
+                          alt="Project One Image 3"
+                          class="d-block"
+                        />
+                        <p class="project360">Supply chain View Page</p>
+                      </div>
+
+                      <div class="carousel-item">
+                        <img
+                          src="images/ExecutiveView.png"
+                          alt="Project One Image 3"
+                          class="d-block"
+                        />
+                        <p class="project360">Executive View Page</p>
+                      </div>
+                      <div class="carousel-item">
+                        <img
+                          src="images/DataModel.png"
+                          alt="Project One Image 2"
+                          class="d-block"
+                        />
+                        <p class="project360">DataModel Page</p>
+                      </div>
+                    </div>
+                    <a
+                      class="carousel-control-prev"
+                      href="#carouselProjectOne"
+                      role="button"
+                      data-slide="prev"
+                    >
+                      <span
+                        class="carousel-control-prev-icon"
+                        aria-hidden="true"
+                      ></span>
+                      <span class="sr-only">Previous</span>
+                    </a>
+                    <a
+                      class="carousel-control-next"
+                      href="#carouselProjectOne"
+                      role="button"
+                      data-slide="next"
+                    >
+                      <span
+                        class="carousel-control-next-icon"
+                        aria-hidden="true"
+                      ></span>
+                      <span class="sr-only">Next</span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project Two Modal -->
+      <div
+        class="modal fade p-0"
+        id="projectTwoModal"
+        tabindex="-1"
+        aria-labelledby="projectTwoModalLabel"
+        aria-hidden="true"
+      >
+        <div
+          class="modal-dialog modal-dialog1 modal-dialog-centered modal-xl1 modal-lg1 modal-sm1"
+        >
+          <div class="modal-content modal-content1">
+            <div class="modal-header modal-header1">
+              <h5 class="modal-title modal-title1" id="projectTwoModalLabel">
+                Sales and Financial Analytics
+              </h5>
+              <button
+                type="button"
+                class="close close-btn"
+                data-dismiss="modal"
+                aria-label="Close"
+              >
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body modal-body1">
+              <div class="row">
+                <div class="col-12 col-xl-5">
+                  <div
+                    class="d-flex justify-content-between align-items-center mb-14"
+                  >
+                    <div class="bg-soft-primary px-16 py-8 rounded-2 fs-18">
+                      Excel Project
+                    </div>
+                    <div>
+                      <img
+                        class="img-fluid thumb-md"
+                        src="images/ms-excel.png"
+                        alt="img"
+                      />
+                    </div>
+                  </div>
+                  <h5 class="fs-32 fw-800 mb-22">
+                    Excel - Finance and Sales Analytics
+                  </h5>
+                  <p
+                    class="text-justify mb-0 text-gray-400 fs-16 fw-500 text-break"
+                  >
+                    This project evaluates AtliQ Hardware's performance in
+                    hitting targets and generating revenue for the years 2019,
+                    2020, and 2021. The report includes generated financial and
+                    sales reports, utilizing Pivot Tables and data modeling
+                    techniques in Excel to analyze and present the data
+                    effectively
+                  </p>
+                </div>
+                <div class="col-12 col-xl-7 mt-30 mt-xl-0">
+                  <div
+                    id="carouselProjectTwo"
+                    class="carousel slide"
+                    data-ride="carousel"
+                  >
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <img
+                          src="images/customer_performance_report.png"
+                          alt="Project Two Image 1"
+                          class="d-block"
+                        />
+                        <p class="project360">customer_performance_report</p>
+                      </div>
+                      <div class="carousel-item">
+                        <img
+                          src="images/P&L_Monthly_report_Financial_analytics.png"
+                          alt="Project Two Image 2"
+                          class="d-block"
+                        />
+                        <p class="project360">
+                          P&L_Monthly_report_Financial_analytics
+                        </p>
+                      </div>
+                      <div class="carousel-item">
+                        <img
+                          src="images/Data_Model.png"
+                          alt="Project Two Image 3"
+                          class="d-block"
+                        />
+                        <p class="project360">DataModel Page</p>
+                      </div>
+                    </div>
+                    <a
+                      class="carousel-control-prev"
+                      href="#carouselProjectTwo"
+                      role="button"
+                      data-slide="prev"
+                    >
+                      <span
+                        class="carousel-control-prev-icon"
+                        aria-hidden="true"
+                      ></span>
+                      <span class="sr-only">Previous</span>
+                    </a>
+                    <a
+                      class="carousel-control-next"
+                      href="#carouselProjectTwo"
+                      role="button"
+                      data-slide="next"
+                    >
+                      <span
+                        class="carousel-control-next-icon"
+                        aria-hidden="true"
+                      ></span>
+                      <span class="sr-only">Next</span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project Three Modal -->
+      <div
+        class="modal fade p-0"
+        id="projectThreeModal"
+        tabindex="-1"
+        aria-labelledby="projectThreeModalLabel"
+        aria-hidden="true"
+      >
+        <div
+          class="modal-dialog modal-dialog1 modal-dialog-centered modal-xl1 modal-lg1 modal-sm1"
+        >
+          <div class="modal-content modal-content1">
+            <div class="modal-header modal-header1">
+              <h5 class="modal-title modal-title1" id="projectThreeModalLabel">
+                SQL-Sales Analytics
+              </h5>
+              <button
+                type="button"
+                class="close close-btn"
+                data-dismiss="modal"
+                aria-label="Close"
+              >
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body modal-body1">
+              <div class="row">
+                <div class="col-12 col-xl-5">
+                  <div
+                    class="d-flex justify-content-between align-items-center mb-14"
+                  >
+                    <div
+                      class="bg-soft-primary px-16 py-8 rounded-2 fs-18 font-ma"
+                    >
+                      SQL Project
+                    </div>
+                    <div>
+                      <img
+                        class="img-fluid thumb-md"
+                        src="images/sql.png"
+                        alt="img"
+                      />
+                    </div>
+                  </div>
+                  <h5 class="fs-32 fw-800 mb-22">SQL-Sales Analytics</h5>
+                  <p
+                    class="text-justify mb-0 text-gray-400 fs-16 fw-500 text-break"
+                  >
+                    This project analyzes gross and net sales, as well as supply
+                    chain data for AtliQ Hardware, which distributes products
+                    globally. The goal is to transform sales data and derive
+                    insights to support decision-making. It involves creating
+                    SQL scripts and stored procedures to automate data
+                    extraction, transformation, and loading.
+                  </p>
+                </div>
+                <div class="col-12 col-xl-7 mt-30 mt-xl-0">
+                  <div
+                    id="carouselProjectThree"
+                    class="carousel slide"
+                    data-ride="carousel"
+                  >
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <img
+                          src="images/APAC_region_share_by_customers.png"
+                          alt="Project One Image 1"
+                          class="d-block"
+                        />
+                        <p class="project360">
+                          net sales of a region by cusomers
+                        </p>
+                      </div>
+
+                      <div class="carousel-item">
+                        <img
+                          src="images/top_n_market_by_region_gross_sales_storage_procedure.png"
+                          alt="Project One Image 2"
+                          class="d-block"
+                        />
+                        <p class="project360">
+                          Stored Procedure retrieving top n markets
+                        </p>
+                      </div>
+
+                      <div class="carousel-item">
+                        <img
+                          src="images/get_customer_sales_by_region_report.png"
+                          alt="Project One Image 3"
+                          class="d-block"
+                        />
+                        <p class="project360">customers net sales by region</p>
+                      </div>
+
+                      <div class="carousel-item">
+                        <img
+                          src="images/get_top_n_customer_by_net_sales.png"
+                          alt="Project One Image 3"
+                          class="d-block"
+                        />
+                        <p class="project360">
+                          stored procedure to get top n customers by net sales
+                        </p>
+                      </div>
+
+                      <div class="carousel-item">
+                        <img
+                          src="images/forecast_accuracy_sql_report.png"
+                          alt="Project One Image 3"
+                          class="d-block"
+                        />
+                        <p class="project360">forecast accuracy report</p>
+                      </div>
+                    </div>
+                    <a
+                      class="carousel-control-prev"
+                      href="#carouselProjectThree"
+                      role="button"
+                      data-slide="prev"
+                    >
+                      <span
+                        class="carousel-control-prev-icon"
+                        aria-hidden="true"
+                      ></span>
+                      <span class="sr-only">Previous</span>
+                    </a>
+                    <a
+                      class="carousel-control-next"
+                      href="#carouselProjectThree"
+                      role="button"
+                      data-slide="next"
+                    >
+                      <span
+                        class="carousel-control-next-icon"
+                        aria-hidden="true"
+                      ></span>
+                      <span class="sr-only">Next</span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="certifications" class="pt-60">
+      <div class="container my-4">
+        <p class="text-center mb-1">View My</p>
+        <h2 style="text-align: center; margin-bottom: 40px">Certificates</h2>
+        <!-- Added heading here with inline styles -->
+        <div class="row mb-4">
+          <div class="col-md-4 mb-4">
+            <div
+              class="certificate-img-wrapper"
+              data-toggle="modal"
+              data-target="#certificateModal1"
+            >
+              <img
+                src="images/SQL-certification.png"
+                class="certificate-img"
+                alt="Certificate Image 1"
+              />
+            </div>
+            <p class="mt-3">SQL-Data Analytics</p>
+          </div>
+          <div class="col-md-4 mb-4">
+            <div
+              class="certificate-img-wrapper"
+              data-toggle="modal"
+              data-target="#certificateModal2"
+            >
+              <img
+                src="images/DSA_certificate.png"
+                class="certificate-img"
+                alt="Certificate Image 2"
+              />
+            </div>
+            <p class="mt-3">Data Structures and Algorithms</p>
+          </div>
+          <div class="col-md-4 mb-4">
+            <div
+              class="certificate-img-wrapper"
+              data-toggle="modal"
+              data-target="#certificateModal3"
+            >
+              <img
+                src="images/PowerBI-certification.png"
+                class="certificate-img"
+                alt="Certificate Image 3"
+              />
+            </div>
+            <p class="mt-3">Power BI-Data Analytics</p>
+            <!-- <p class="mt-3">sql-Data Analytics</p> -->
+          </div>
+          <!-- Repeat the above block for more certificates -->
+        </div>
+        <div class="row extra1 d-none mb-4">
+          <div class="col-md-4 mb-4">
+            <div
+              class="certificate-img-wrapper"
+              data-toggle="modal"
+              data-target="#certificateModal4"
+            >
+              <img
+                src="images/Excel-certificate.png"
+                class="certificate-img"
+                alt="Certificate Image 1"
+              />
+            </div>
+            <p class="mt-3">MS Excel-Data Analytics</p>
+          </div>
+          <div class="col-md-4 mb-4">
+            <div
+              class="certificate-img-wrapper"
+              data-toggle="modal"
+              data-target="#certificateModal5"
+            >
+              <img
+                src="images/Javascript_certification.png"
+                class="certificate-img"
+                alt="Certificate Image 2"
+              />
+            </div>
+            <p class="mt-3">Javascript Essentials</p>
+          </div>
+          <!-- Repeat the above block for more certificates -->
+        </div>
+        <button class="btn btn-dark show-more-btn2">More</button>
+      </div>
+
+      <!-- Certificate Modals -->
+      <div
+        class="modal fade"
+        id="certificateModal1"
+        tabindex="-1"
+        aria-labelledby="certificateModalLabel1"
+        aria-hidden="true"
+      >
+        <div
+          class="modal-dialog modal-dialog-centered modal-lg modal-md modal-sm"
+        >
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="certificateModalLabel1">
+                SQL Beginner to Advance For Data Professionals
+              </h5>
+              <button
+                type="button"
+                class="close"
+                data-dismiss="modal"
+                aria-label="Close"
+              >
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <img
+                src="images/SQL-certification.png"
+                class="modal-certificate-img"
+                alt="Certificate Image 1"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="modal fade"
+        id="certificateModal2"
+        tabindex="-1"
+        aria-labelledby="certificateModalLabel2"
+        aria-hidden="true"
+      >
+        <div
+          class="modal-dialog modal-dialog-centered modal-lg modal-md modal-sm"
+        >
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="certificateModalLabel2">
+                Applied Algorithms and Data Structures
+              </h5>
+              <button
+                type="button"
+                class="close"
+                data-dismiss="modal"
+                aria-label="Close"
+              >
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <img
+                src="images/DSA_certificate.png"
+                class="modal-certificate-img"
+                alt="Certificate Image 2"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="modal fade"
+        id="certificateModal3"
+        tabindex="-1"
+        aria-labelledby="certificateModalLabel3"
+        aria-hidden="true"
+      >
+        <div
+          class="modal-dialog modal-dialog-centered modal-lg modal-md modal-sm"
+        >
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="certificateModalLabel3">
+                Power BI For Data Analytics All Levels 2.0
+              </h5>
+              <button
+                type="button"
+                class="close"
+                data-dismiss="modal"
+                aria-label="Close"
+              >
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <img
+                src="images/PowerBI-certification.png"
+                class="modal-certificate-img"
+                alt="Certificate Image 3"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="modal fade"
+        id="certificateModal4"
+        tabindex="-1"
+        aria-labelledby="certificateModalLabel4"
+        aria-hidden="true"
+      >
+        <div
+          class="modal-dialog modal-dialog-centered modal-lg modal-md modal-sm"
+        >
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="certificateModalLabel4">
+                Excel: Mother of Business Intelligence
+              </h5>
+              <button
+                type="button"
+                class="close"
+                data-dismiss="modal"
+                aria-label="Close"
+              >
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <img
+                src="images/Excel-certificate.png"
+                class="modal-certificate-img"
+                alt="Certificate Image 3"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="modal fade"
+        id="certificateModal5"
+        tabindex="-1"
+        aria-labelledby="certificateModalLabel5"
+        aria-hidden="true"
+      >
+        <div
+          class="modal-dialog modal-dialog-centered modal-lg modal-md modal-sm"
+        >
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="certificateModalLabel5">
+                Javascript Essentials
+              </h5>
+              <button
+                type="button"
+                class="close"
+                data-dismiss="modal"
+                aria-label="Close"
+              >
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <img
+                src="images/Javascript_certification.png"
+                class="modal-certificate-img"
+                alt="Certificate Image 3"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="contact" class="contact-section text-center">
+      <div class="container">
+        <div class="row mb-5">
+          <div class="col-lg-8 mx-auto text-center">
+            <h2 class="text-center mb-3">Contact Me</h2>
+            <p class="text-muted">
+              Feel free to connect with me on the following platforms
+            </p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-3 col-md-6 col-sm-6">
+            <div class="contact-item">
+              <div class="icon-circle">
+                <i class="fas fa-map-signs"></i>
+              </div>
+              <h4>Address</h4>
+              <p>Hyderabad, India</p>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 col-sm-6">
+            <div class="contact-item">
+              <div class="icon-circle">
+                <a href="tel:+91-9390163549"
+                  ><i class="fas fa-phone-alt"></i
+                ></a>
+              </div>
+              <h4>Contact Number</h4>
+              <p><a href="tel:+91-9390163549">+91-9390163549</a></p>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 col-sm-6">
+            <div class="contact-item">
+              <div class="icon-circle">
+                <a href="mailto:bhukyaanil24@gmail.com"
+                  ><i class="fas fa-paper-plane"></i
+                ></a>
+              </div>
+              <h4>Email Address</h4>
+              <p>
+                <a href="mailto:bhukyaanil24@gmail.com"
+                  >bhukyaanil24@gmail.com</a
+                >
+              </p>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 col-sm-6">
+            <div class="contact-item">
+              <div class="icon-circle">
+                <a href="https://www.linkedin.com/in/anil-bhukya-b75908191/"
+                  ><i class="fab fa-linkedin"></i
+                ></a>
+              </div>
+              <h4>LinkedIn</h4>
+              <p>
+                <a href="https://www.linkedin.com/in/anil-bhukya-b75908191/"
+                  >Linkedin_Profile</a
+                >
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script src="script.js"></script>
+  </body>
+</html>
