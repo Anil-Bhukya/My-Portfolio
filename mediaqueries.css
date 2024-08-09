@@ -1,0 +1,104 @@
+/* Profile section */
+
+@media (max-width: 992px) {
+    .image-profile-centered {
+       justify-content: center !important;
+    }
+  }
+  @media (min-width:768px) and (max-width: 850px) {
+    .w-md-60 {
+       width: 65% !important;
+    }
+  }
+  @media (min-width:850px) and (max-width: 992px) {
+    .w-md-75 {
+       width: 75% !important;
+    }
+  }
+
+/* About Me section */
+
+@media (min-width: 768px) and (max-width: 992px) {
+    .profile-img {
+      width: 50% !important; /*Adjust height for medium screens */
+    }
+  }
+  @media (max-width: 767.98px) {
+    .profile-img {
+      width: 70% !important; /*Adjust height for small screens*/
+    }
+  }
+  @media (min-width: 992px) and (max-width: 1200px) {
+    .profile-img {
+      width: 100% !important; /*Adjust height for medium screens */
+    }
+  }
+  @media (min-width: 1200px) {
+    .profile-img {
+      width: 80% !important; /*Adjust height for medium screens */
+    }
+  }
+  @media (max-width: 992px) {
+    .text-justify {
+      margin-top: 1.5rem !important; /*Adjust height for small screens*/
+    }
+  }
+
+  /* Skills and Expertise */
+
+  @media (max-width: 576px) {
+    .icon-content {
+      flex-direction: column; /* Stack icon and text vertically on small screens */
+      text-align: center; /* Center text */
+    }
+  }
+
+  /* Project section  */
+  @media (min-width: 568px) and (max-width: 992px) {
+    .modal-sm1 {
+      max-width: 500px !important;
+    }
+  }
+  @media (min-width: 992px) and (max-width: 1200px) {
+    .modal-lg1 {
+      max-width: 600px !important;
+    }
+  }
+  @media (min-width: 1200px) {
+    .modal-xl1 {
+      width: 1140px !important;
+    }
+  }
+
+  /* certification section */
+
+  @media (min-width: 768px) and (max-width: 992px) {
+    .certificate-img-wrapper {
+      height: 80%;
+    }
+  }
+  @media (max-width: 765.77px) {
+    .certificate-img-wrapper {
+      height: 320px;
+    }
+  }
+  
+  @media (max-width: 765.77px) {
+    .modal-sm {
+      max-width: 600px;
+    }
+  }
+  @media (min-width: 765.77px) and (max-width:992px){
+    .modal-md {
+      max-width: 700px;
+    }
+  }
+
+/* contact section */
+
+@media (min-width: 768px) {
+    .row {
+      display: flex;
+      justify-content: center;
+    }
+  }
